@@ -1,7 +1,7 @@
 ## 2.0-2
 - Support for TLS w/o client certificates
 - User interface restructure
-- Added supports for MQTT Subscriptions that generates ONFIV events.  Typically used to trigger Camera/VMS actions.
+- Added supports for MQTT Subscriptions that generates ONVIF events.  Typically used to trigger Camera/VMS actions.
 - Auto publishing device status on MQTT every 15 minutes on topic "axis/status"
 
 ## 1.2-1
