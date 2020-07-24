@@ -81,8 +81,49 @@ Examples
 location=New-York
 country=France,city=Paris,store=some-id
 ```
+### Data structure
+Select desired datastructure.
+Flat JSON
+```
+{
+  "property": "value"
+  ...
+}
+```
+Tags/Values JSON
+```
+{
+  "tags": {
+    "fixed-properties": "value"
+    ...
+  },
+  "values":{
+    "value-properties": "value",
+    ...
+  }
+}
+```
+Influx optimized JSON
+Typically for systems pushing to an Influx Server
+```
+[
+  {
+    "varialble-properties": "value",
+    ...
+  },
+  {
+    "fixed-properties": "value"
+    ...
+  }
+]
+```
+
 ### Image Capture
-If setting image, a JPEG image will be included (base64 encoded)
+If set to Yes, a JPEG image will be included (base64 encoded) with property **image**
+#### Resolution
+Beware of high payload size for large resolutions.  Broker may not accept very large payloads.
+#### Video Channel
+Typically used if camera is configured with view areas that crops parts of image.
 
 ### Test connection
 This will publish test data to the target and display a success/failure message.  On failure, check the log for hints.
