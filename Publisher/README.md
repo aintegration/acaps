@@ -58,9 +58,9 @@ Publishing on these topic will generate the following events that can be used to
 If no device or VMS actions are defined, publishing on the topics will have no effect on the device.
 
 ### Additional Influx settings
-#### Database
+#### Influx Database
 Set the database name
-#### Collection
+#### Influx Collection
 Set the collection where data will be stored
 
 ### User/Password
@@ -120,9 +120,9 @@ Typically for systems pushing to an Influx Server
 
 ### Image Capture
 If set to Yes, a JPEG image will be included (base64 encoded) with property **image**
-#### Resolution
+#### Image Resolution
 Beware of high payload size for large resolutions.  Broker may not accept very large payloads.
-#### Video Channel
+#### Image Video Channel
 Typically used if camera is configured with view areas that crops parts of image.
 
 ### Test connection
