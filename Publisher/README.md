@@ -1,13 +1,15 @@
 ![target](pictures/publisher2.png)
 
-### Prerequisites
-1. Axis Camera
+## Prerequisites
+1. Axis Camera with firmware 10.X or higher
 2. An Influx server, HTTP server or MQTT Broker
 
-### Supported platforms
+## Supported platforms
+Version 2.0-2 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 - [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_mips.eap)
 - [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_armv7hf.eap)
 - [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_aarch64.eap)
+
 
 
 # Configuration
