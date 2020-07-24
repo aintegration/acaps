@@ -1,3 +1,9 @@
+## 2.0-2
+- Support for TLS w/o client certificates
+- User interface restructure
+- Added supports for MQTT Subscriptions that generate ONFIV events.  This can be used to reach a VMS with an MQTT client.
+- Auto publishing device status on MQTT 15 minutes on topic "axis/status"
+
 ## 1.2-1
 - Fixed a bug introduced in 1.2-0 that prevented images to be included in selected events
 
