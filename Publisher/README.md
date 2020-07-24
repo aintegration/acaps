@@ -4,7 +4,7 @@
 1. Axis Camera with firmware 10.X or higher
 2. An Influx server, HTTP server or MQTT Broker
 
-## Supported platforms
+## Download
 Version 2.0-2 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 - [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_mips.eap)
 - [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_armv7hf.eap)
