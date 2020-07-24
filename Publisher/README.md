@@ -14,7 +14,7 @@
 
 ## Server
 ### Type
-The server type that will recive data.
+The server type that will receive data.
 
 ### Address:port
 Examples
@@ -25,9 +25,9 @@ Examples
 ```
 ### Additional MQTT settings
 #### MQTT: Client ID
-Set a name for the device used primaruly for MQTT.  This will also be added in the data payload.
+Set a uniques clinet ID name.
 #### MQTT: Topic
-If leaving blank the topic will be axis/event/...
+Leaving topic blank will result in default **topic axis/event/[DEVICE EVENT TOPIC]**
 #### MQTT Device status publish
 Axis device status will be automatically published every 15 minutes.  This can be used as monitor devices.
 ```
@@ -71,9 +71,9 @@ Encrypts traffic and verify server authenticity.  If needed, add client certific
 ### Event
 Select that event that will trigger and set payload.
 ### State
-Some events are statful (high/low).  Us this to only recive data when the event goes high or recive messages when if goes either high or low.
+Some events are stateful (high/low).  Us this to only receive data when the event goes high or reecive messages when if goes either high or low.
 ### Additional tags
-Add additional tags that wil be included as properties in payload.
+Add additional tags that will be included as properties in payload.
 Examples
 ```
 location=New-York
