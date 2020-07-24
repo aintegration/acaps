@@ -1,5 +1,5 @@
 # Axis Publisher 1.2-1
-![target](pictures/publisher.PNG)
+![target](pictures/publisher2.png)
 
 Getting event data payload from an ACAP can be a challange.  The common way is to connect to the VAPIX/ONVIF event stream which requires an RTSP stream with authentication.  Publish decouples the data producing device and push the data to a consuming services. 
 
@@ -10,9 +10,9 @@ Publisher will send supported event payload to MQTT, Influx Database or a HTTP S
 2. An Influx server, HTTP server or MQTT Broker
 
 ### Supported platforms
-- [MIPS](https://github.com/aintegration/publisher/raw/master/Axis_Publisher_1_2_1_mipsisa32r2el.eap)
-- [ARMv7](https://github.com/aintegration/publisher/raw/master/Axis_Publisher_1_2_1_armv7hf.eap)
-- [AARCH64](https://github.com/aintegration/publisher/raw/master/Axis_Publisher_1_2_1_aarch64.eap)
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_mips.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_armv7hf.eap)
+- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_aarch64.eap)
 
 ### Supported Anlytics Producers
 - Event payload from generic ACAP events
