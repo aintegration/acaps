@@ -1,3 +1,7 @@
+## 2.0-3
+- Fixed certificate page
+- Removed subscription QOS 2 that prevented connection to AWS broker
+
 ## 2.0-2
 - Support for TLS w/o client certificates
 - User interface restructure
