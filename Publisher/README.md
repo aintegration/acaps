@@ -6,9 +6,9 @@
 
 ## Download
 Version 2.0-3 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
-- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_mips.eap)
-- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_armv7hf.eap)
-- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_aarch64.eap)
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_0_4_mips.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_0_4_armv7hf.eap)
+- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_0_4_aarch64.eap)
 
 
 

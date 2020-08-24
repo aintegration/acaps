@@ -1,3 +1,6 @@
+## 2.0-4
+- Fixed a UI bug that made event state send MQTT messages on both high and low states when selecting "Only when high" after changing to "High & Low"
+ 
 ## 2.0-3
 - Fixed certificate page
 - Removed subscription QOS 2 that prevented connection to AWS broker
