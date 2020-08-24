@@ -3,3 +3,12 @@ Getting event data payload from an ACAP into a system can be a challange.  The c
 
 [Read More and download](https://github.com/aintegration/acaps/tree/master/Publisher)
 
+# Axis Countdown
+An ACAP to be used together with Axis Occupancy, People Counter or Direction detection that generates an event when a user-defined threashold has been reached.
+
+[Read More and download](https://github.com/aintegration/acaps/tree/master/Countdown)
+
+# Axis Barcode
+An ACAP that reads QR and bar-codes.  THis can be used with Axis Publisher to get the data sent on MQTT.
+
+[Read More and download](https://github.com/aintegration/acaps/tree/master/Barcode)
