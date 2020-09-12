@@ -1,3 +1,9 @@
+## 2.1-1
+- Topic is now shown correctly in GUI
+- Cleaned up GUI
+- Removed the selection of JSON struction in GUI
+- Cleaned up payload of MQTT message axis/status
+
 ## 2.0-4
 - Fixed a UI bug that made event state send MQTT messages on both high and low states when selecting "Only when high" after changing to "High & Low"
  
