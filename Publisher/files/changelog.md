@@ -1,3 +1,12 @@
+## 2.1-2
+* Fixed bug that could prevent publishing VMD if profile name did not have default value
+* Added property localTime in payload
+* Added ability to adjust status update using an API call.
+  - Changing the time period requires restart of Publisher.
+  - Setting retained will append the serial number to the topic
+  - http://<ip>/local/publisher/settings?set=status&json={"seconds":300,"retained":true,"topic":"my/own/topic"}
+* Added timestamp and localTime in status update
+
 ## 2.1-1
 - Topic is now shown correctly in GUI
 - Cleaned up GUI

@@ -7,11 +7,9 @@
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 
-- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_1_mips.eap)
-- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_1_armv7hf.eap)
-- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_1_aarch64.eap)
-
-
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_mips.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_armv7hf.eap)
+- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_aarch64.eap)
 
 # Configuration
 
@@ -35,18 +33,30 @@ Leaving topic blank will result in default **topic axis/event/[DEVICE EVENT TOPI
 Axis device status will be automatically published every 15 minutes.  This can be used as monitor devices.
 ```
 Topic: axis/status
-Payload: {
+Note: The serial number will be appended to topic (/ACCC8Exxxxxx) if retained flag is set.
+
+Payload: 
 {
+  "device": "ACCC8Exxxxxx",
+  "clientID":"ACCC8Exxxxxx-publisher",
+  "model":"AXIS P1375",
   "IPv4":"1.2.3.4",
-  "firmware":"10.0.2",
-  "model":"AXIS M3057-PLVE",
-  "serial":"ACCC8E123456",
-  "kbps":179.2,
-  "loadavg":0.5
+  "firmware":"10.0.0",
+  "kbps":11.9,
+  "loadavg":0.8,
+  "timestamp":1600515973381,
+  "localtime":"2020-09-19 13:46:13"
 }
 ```
 kbps = average outgoing network traffic
 loadavg = Linux average CPU load (15 minute average)
+
+To modify status update settings use HTTP GET
+```
+http://address/local/publisher/settings?set=status&json={"seconds":600,"retained":true,"topic":"my/own/topic"}
+```
+*Note: Publisher needs to be restarted when changing the frequency "seconds"*
+
 #### MQTT Subscription
 Axis Publisher automatically subscribes on topics
 - axis/[SERIAL NUMBER]/event
