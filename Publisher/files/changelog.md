@@ -1,3 +1,13 @@
+## 2.2-5
+* Update the GUI pages and navigation.
+  - Added menu on left side
+  - More helpful instructions 
+* New features/options
+  - Ability to set video text overlay with MQTT messages (display e.g. sensor data)
+  - Change recurring device status on MQTT
+  - MQTT to VMS event proxy.  Ability to reach a VMS action rules with MQTT messaging
+  - New target server "Axis Device".  Ability to send HTTP POST to a sibling Axis Device
+
 ## 2.1-2
 * Fixed bug that could prevent publishing VMD if profile name did not have default value
 * Added property localTime in payload

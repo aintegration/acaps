@@ -1,140 +1,47 @@
-![target](pictures/publisher2.png)
 
 ## Prerequisites
 1. Axis Camera with firmware 10.X or higher
-2. An Influx server, HTTP server or MQTT Broker
+2. An MQTT Broker, Influx server or HTTP server
 
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 
-- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_mips.eap)
-- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_armv7hf.eap)
-- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_aarch64.eap)
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_5_mips.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_5_armv7hf.eap)
+- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_5_aarch64.eap)
 
 # Configuration
 
-## Server
-### Type
-The server type that will receive data.
+## TARGET
+Select Target type MQTT, HTTP or Influx
 
-### Address:port
-Examples
-```
-  mqtt.server.com:1883
-  http://12.23.34.45/some/end/point
-  influx.server.com:8086
-```
-### Additional MQTT settings
-#### MQTT: Client ID
-Set a uniques clinet ID name.
-#### MQTT: Topic
-Leaving topic blank will result in default **topic axis/event/[DEVICE EVENT TOPIC]**
-#### MQTT Device status publish
-Axis device status will be automatically published every 15 minutes.  This can be used as monitor devices.
-```
-Topic: axis/status
-Note: The serial number will be appended to topic (/ACCC8Exxxxxx) if retained flag is set.
+![target](pictures/target.png)
 
-Payload: 
-{
-  "device": "ACCC8Exxxxxx",
-  "clientID":"ACCC8Exxxxxx-publisher",
-  "model":"AXIS P1375",
-  "IPv4":"1.2.3.4",
-  "firmware":"10.0.0",
-  "kbps":11.9,
-  "loadavg":0.8,
-  "timestamp":1600515973381,
-  "localtime":"2020-09-19 13:46:13"
-}
-```
-kbps = average outgoing network traffic
-loadavg = Linux average CPU load (15 minute average)
 
-To modify status update settings use HTTP GET
-```
-http://address/local/publisher/settings?set=status&json={"seconds":600,"retained":true,"topic":"my/own/topic"}
-```
-*Note: Publisher needs to be restarted when changing the frequency "seconds"*
+* Address: HTTP & Influx needs to start with http:// or https://
+* User: All	Leave blank if not needed
+* Password: Leave blank if not needed
+* TLS: Use TLS if server requires. "Trust Server Certificate" will trust all certificates. "Verify certificate" will reject connections if certificate is expired or does not match the address".  If client certificate is required, install that in menu CERTIFICATE
+* User tags: User defined tags will be included in payload. Multiple tags may be separated with comma. Example: name=Camera 1,location=New York
 
-#### MQTT Subscription
-Axis Publisher automatically subscribes on topics
-- axis/[SERIAL NUMBER]/event
-- axis/[SERIAL NUMBER]/event/high
-- axis/[SERIAL NUMBER]/event/low
+### MQTT
+* Client ID: Unique MQTT client identifier string
+* Topic: The topic that messages will be published on device events. If left blank the ONVIF topic will be used 
 
-Publishing on these topic will generate the following events that can be used to trigger actions in the Axis device or by a Video Management System that monitors the events
-- MQTT Event (puls)
-- MQTT State (stateful)
-If no device or VMS actions are defined, publishing on the topics will have no effect on the device.
+### Influx
+* Database: The name of the database
+* Collection: The collection (table) of the database
 
-### Additional Influx settings
-#### Influx Database
-Set the database name
-#### Influx Collection
-Set the collection where data will be stored
+## EVENT
+Set device event that will trigger data publishing
+![target](pictures/event.png)
 
-### User/Password
-Leave blank if broker does not require authentication.
+* Event: Set the event. Some selections (e.g. "ACAP Events") may trigger publishing on multiple events.  Subscribers can see which event that triggered.
+* State: Select if publishing shall occur when event goes high or on all high/low transitions.
+* Image: A JPEG image (base64 encoded) will be included in the payload. Set resolutions and video channel. Channels other than 1 are typically used for cropped images (View Areas).
 
-### TLS
-Encrypts traffic and verify server authenticity.  If needed, add client certificate by clicking "Set TLS certificates"
-
-## Data
-### Event
-Select that event that will trigger and set payload.
-### State
-Some events are stateful (high/low).  Us this to only receive data when the event goes high or reecive messages when if goes either high or low.
-### Additional tags
-Add additional tags that will be included as properties in payload.
-Examples
-```
-location=New-York
-country=France,city=Paris,store=some-id
-```
-### Data structure
-Select desired datastructure.
-Flat JSON
-```
-{
-  "property": "value"
-  ...
-}
-```
-Tags/Values JSON
-```
-{
-  "tags": {
-    "fixed-properties": "value"
-    ...
-  },
-  "values":{
-    "value-properties": "value",
-    ...
-  }
-}
-```
-Influx optimized JSON
-Typically for systems pushing to an Influx Server
-```
-[
-  {
-    "varialble-properties": "value",
-    ...
-  },
-  {
-    "fixed-properties": "value"
-    ...
-  }
-]
-```
-
-### Image Capture
-If set to Yes, a JPEG image will be included (base64 encoded) with property **image**
-#### Image Resolution
-Beware of high payload size for large resolutions.  Broker may not accept very large payloads.
-#### Image Video Channel
-Typically used if camera is configured with view areas that crops parts of image.
-
-### Test connection
-This will publish test data to the target and display a success/failure message.  On failure, check the log for hints.
+## OPTIONS
+Additional features and options.  See OPTIONS menu for more details.
+* Set video text overlay with MQTT
+* Recurring device status on MQTT
+* MQTT to VMS event proxy
