@@ -15,7 +15,7 @@
 ## TARGET
 Select Target type MQTT, HTTP or Influx
 
-![target](pictures/target.png)
+![target](pictures/target2.PNG)
 
 
 * Address: HTTP & Influx needs to start with http:// or https://
@@ -34,7 +34,7 @@ Select Target type MQTT, HTTP or Influx
 
 ## EVENT
 Set device event that will trigger data publishing
-![target](pictures/event.png)
+![event](pictures/event2.PNG)
 
 * Event: Set the event. Some selections (e.g. "ACAP Events") may trigger publishing on multiple events.  Subscribers can see which event that triggered.
 * State: Select if publishing shall occur when event goes high or on all high/low transitions.
