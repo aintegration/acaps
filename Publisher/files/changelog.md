@@ -1,9 +1,9 @@
-## 2.2-5
+## 2.2-6
 * Update the GUI pages and navigation.
   - Added menu on left side
   - More helpful instructions 
 * New features/options
-  - Ability to set video text overlay with MQTT messages (display e.g. sensor data)
+  - Ability to set video text overlay with MQTT messages (display e.g. sensor data).  Only available for  armv7hf.
   - Change recurring device status on MQTT
   - MQTT to VMS event proxy.  Ability to reach a VMS action rules with MQTT messaging
   - New target server "Axis Device".  Ability to send HTTP POST to a sibling Axis Device

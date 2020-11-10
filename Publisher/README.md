@@ -6,10 +6,9 @@
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 
-- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_5_mips.eap)
-- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_5_armv7hf.eap)
-- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_1_2_aarch64.eap).  AARCH64 is still on version 2.1-2 as the platform does not support text overlay. 
-
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_mips.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_armv7hf.eap)
+- [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_aarch64.eap)
 
 # Configuration
 
