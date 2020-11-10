@@ -6,9 +6,10 @@
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Publisher/files/changelog.md)
 
-- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_mips.eap)
+- [MIPS](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_mipsisa32r2el.eap)
 - [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_armv7hf.eap)
 - [AARCH64](https://github.com/aintegration/acaps/raw/master/Publisher/files/Axis_Publisher_2_2_6_aarch64.eap)
+
 
 # Configuration
 
