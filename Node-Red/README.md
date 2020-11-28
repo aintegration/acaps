@@ -1,5 +1,5 @@
 ## Description
-Node-Red (see https://nodered.org) is a Node.JS application and can be installed on a variety of different computers, 
+Node-Red (https://nodered.org) is a Node.JS application and can be installed on a variety of different computers, 
 servers and virtual machines.  The Node-Red ACAP packages Node.JS and NPM with Node-Red Modules to be installed in an 
 Axis camera.  The primary use case is to simplify adding integration, logic and notification services to the camera.
 It is a visual scripting (low-coding) alternative compared to ACAP development that requires embedded C development skills.
@@ -16,7 +16,7 @@ Note that Axis cameras are not generic computers so there may be limitations on 
 - Some 3:rd party nodes may require components (e.g. Python) that is not avaialbel in the cameras.
 
 ## Download
-[Change log](https://github.com/aintegration/acaps/blob/master/Node-Red/files/changelog.md)
+[Change log](https://github.com/aintegration/acaps/blob/master/Node-Red/files/README.md)
 
 - [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Node-Red/files/Node-Red_1_0_0_armv7hf.eap)
 - MIPS (Not avaialble)
