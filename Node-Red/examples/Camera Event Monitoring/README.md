@@ -4,9 +4,8 @@
 
 This example describes how to get events from the camera into Node-Red flows to be used in a Node-Red flow.
 
-Axis cameras (and ACAPs) may generate events and data that may be used for triggering actions and notifications.  
-A video management system will typically use the ONVIF event stream to recive these events.  An alternative (and simpler) way 
-is to use MQTT as a comminucation channel.  Camera firmware 10.0 and later includes an MQTT client.
+Axis cameras (and ACAPs) may generate events and data that may be used for triggering actions and notifications.  A video management system will typically use the ONVIF event stream to recive these events.
+An alternative (and simpler) way is to use MQTT.  Camera firmware 10.0 and later includes an MQTT client.
 
 For MQTT to work there must be an MQTT broker.  The broker is typically installed on a local computer or as public service.
 With the Node-Red ACAP installed it is possible to have Node-Red act as a local MQTT broker that the camera client and the Node-Red 
