@@ -34,5 +34,5 @@ In order to simplify this configuration you can use the example flow "Securing N
 
 
 ## Example flows
-- [Securing Node-Red](examples/Securing%20Node-Red) provides a dashboard interface that simplifies editin Node-Red settings file and also generate pashword hashes.
-- [Local MQTT Broker](examples/Securing%20Node-Red) shows how to run a local MQTT broker in the camera.
+
+Check the examples directory that describes common usage, flows, ticks & trips. 
