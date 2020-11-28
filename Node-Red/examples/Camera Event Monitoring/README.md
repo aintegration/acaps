@@ -16,26 +16,34 @@ client can connect to.
 - Node-Red server (installed in camera or a local computer)
 
 ## MQTT Broker
+
 If there is already an MQTT broker available on the network you may use that.  If you want to run the MQTT broker in the camera you need to 
 import the AEDES node ( [node-red-contrib-aedes](https://flows.nodered.org/node/node-red-contrib-aedes) ) into Node red.  Don't forget to 
 configure the broker to require user and password in the tab "Security".
+
 ![aedes](pictures/aedes.png)
 
 ## Camera MQTT Client
+
+Note: An alternative to the camera MQTT client is to use Axis Integration Team [Axis Publisher](https://github.com/aintegration/acaps/tree/master/Publisher)
+
 Configure the camera MQTT client to connect to the local MQTT broker.  You need set the cameras IP as the "localhost" is not accepted.
+
 ![client](pictures/cameraclient.png)
 
 ## Camera Event Publishing
-You need to setup MQTT publish in the camera under *Events | MQTT Events*.
-![publish](pictures/publish.png)
 
-It is recommeded settings:
+You need to setup MQTT publish in the camera under *Events | MQTT Events*.
+
+Recommeded settings:
 - Disable default condition prefix.
 - The "Custom condition prefix" is the MQTT topic.  This example will use "events".
 - Disable include condition name
 - Disable condition namepsace
 - Disabel serial number in payload
 - Add the event that you want to monitor.  
+
+![publish](pictures/publish.png)
 
 
 ## Node-Red MQTT Client (subscription)
@@ -45,5 +53,11 @@ Under the the security, set the user/password you defined in the broker.  Click 
 
 Set topic to "events" and set output to "a parsed JSON object"
 ![client](pictures/subscribe.png)
+
+
+## Node-Red Output
+
+![client](pictures/output.png)
+
 
 
