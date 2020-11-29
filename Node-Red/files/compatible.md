@@ -1,5 +1,5 @@
 ##  Compatible cameras (not verified unless stated below)
-Based on cameras with amrv7hf, at least 1024 MB ram and SD card
+Based on cameras with ARMv7hf, at least 1024 MB ram and SD card
 
 - AXIS M1137
 - AXIS M3067-P
