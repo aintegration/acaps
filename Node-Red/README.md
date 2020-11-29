@@ -17,7 +17,7 @@ Note that Axis cameras are not generic computers so there may be limitations on 
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Node-Red/files/README.md)
 
-- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Node-Red/files/Node-Red_1_0_0_armv7hf.eap)
+- [ARMv7hf](https://github.com/aintegration/acaps/raw/master/Node-Red/files/Node-Red_1_0_0_armv7hf.eap) [See list of compatible cameras](https://github.com/aintegration/acaps/blob/master/Node-Red/files/compatible.md)
 - MIPS (Not avaialble)
 - AARCH64 (Not avaialble)
 
