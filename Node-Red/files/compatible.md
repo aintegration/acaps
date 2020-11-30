@@ -1,6 +1,7 @@
 ##  Compatible cameras (not verified unless stated below)
 Based on cameras with ARMv7hf, at least 1024 MB ram and SD card
 
+- AXIS FA54 [VERIFIED]
 - AXIS M1137
 - AXIS M3067-P
 - AXIS M3068-P
