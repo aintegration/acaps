@@ -17,7 +17,7 @@ Based on cameras with ARMv7hf, at least 1024 MB ram and SD card
 - AXIS P3925
 - AXIS P5654-E
 - AXIS P7304
-- AXIS Q1615 Mk III
+- AXIS Q1615 Mk III  [VERIFIED]
 - AXIS Q1700-LE
 - AXIS Q1798-LE
 - AXIS Q3517-SLVE
