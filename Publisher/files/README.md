@@ -1,21 +1,31 @@
+## 2.3-1
+- MQTT Port moved fron address input to its own input box
+- Event Topic input move from TARGET to EVENT
+- Moved descriptions to ABOUT
+- Updated VMS event proxy
+	- Subscription topic can now be changed for event and state
+	- State is no longer controlled in topic, it is control in payload
+- Ability to set transparancey in text overlay
+- Added ability to set transparancy level for background in text overlay
+
 ## 2.2-6
-* Update the GUI pages and navigation.
+- Update the GUI pages and navigation.
   - Added menu on left side
   - More helpful instructions 
-* New features/options
+- New features/options
   - Ability to set video text overlay with MQTT messages (display e.g. sensor data).  Only available for  armv7hf.
   - Change recurring device status on MQTT
   - MQTT to VMS event proxy.  Ability to reach a VMS action rules with MQTT messaging
   - New target server "Axis Device".  Ability to send HTTP POST to a sibling Axis Device
 
 ## 2.1-2
-* Fixed bug that could prevent publishing VMD if profile name did not have default value
-* Added property localTime in payload
-* Added ability to adjust status update using an API call.
+- Fixed bug that could prevent publishing VMD if profile name did not have default value
+- Added property localTime in payload
+- Added ability to adjust status update using an API call.
   - Changing the time period requires restart of Publisher.
   - Setting retained will append the serial number to the topic
   - http://<ip>/local/publisher/settings?set=status&json={"seconds":300,"retained":true,"topic":"my/own/topic"}
-* Added timestamp and localTime in status update
+- Added timestamp and localTime in status update
 
 ## 2.1-1
 - Topic is now shown correctly in GUI
