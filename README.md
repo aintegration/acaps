@@ -8,7 +8,3 @@ An ACAP to be used together with Axis Occupancy, People Counter or Direction det
 
 [Read More and download](https://github.com/aintegration/acaps/tree/master/Countdown)
 
-# Axis Barcode
-An ACAP that reads QR and bar-codes.  This ACAP can be used together with Axis Publisher to get the data published on MQTT.
-
-[Read More and download](https://github.com/aintegration/acaps/tree/master/Barcode)
