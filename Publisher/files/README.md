@@ -1,3 +1,7 @@
+# 2.3-2
+- Fixed status publish to show 15 minut loadavg instead of one 1 minute loadavg
+- Moved user properties to options
+
 ## 2.3-1
 - MQTT Port moved fron address input to its own input box
 - Event Topic input move from TARGET to EVENT
