@@ -1,5 +1,6 @@
-# 2.3-2
-- Fixed status publish to show 15 minut loadavg instead of one 1 minute loadavg
+# 2.3-3
+- Fixed bug that reset event topic on restart
+- Fixed status publish loadavg from 1 minute to 15 minut average
 - Moved user properties to options
 
 ## 2.3-1
