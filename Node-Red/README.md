@@ -11,8 +11,10 @@ Note that Axis cameras are not generic computers so there may be limitations on 
 2. A mounted SD Card in the camera.  Node.JS, NPM and modules are big and camera flash memory is limited.  The SD card is used to store nodes and flows. 
 
 ## Limitations
-- Node-Red will consume substantial FLASH and RAM memory.  Different cameras may have different amount of availabel resources.  This means the Node-Red may not work on some models. It may not be possible to combine Node-Red with other ACAP.  The CPU consumption is limited and depends on the flows. 
-- Some imported 3:rd party nodes may require additional components (e.g. Python) that is not avaialbel in the cameras.
+- Installation and importing nodes will NOT work if the camera is behind a proxy.
+- Node-Red will consume FLASH and RAM memory.  Different cameras may have different amount of availabel resources.  This means the Node-Red may not work on some models. It may not be possible to combine Node-Red with other ACAP that consumes a lot of RAM or FLASH. Note the Node-Red CPU consumption is limited (depending on the active flows). 
+- Some imported 3:rd party nodes may require additional components (e.g. Python) that is not avaialable in the camera firmware.
+
 
 ## Download
 [Change log](https://github.com/aintegration/acaps/blob/master/Node-Red/files/README.md)
