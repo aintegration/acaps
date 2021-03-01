@@ -4,7 +4,7 @@ Anybody can access your Node-Red if they have network access. You are recommeded
 The example flow provides a dashboard editor that can be used to generate password hash and edit the Node-Red settings file.
 
 ### Additional nodes to be installed
-* [node-red-dashbaord](https://flows.nodered.org/node/node-red-dashboard) User interface dashboard
+* [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) User interface dashboard
 * [node-red-contrib-bcrypt](https://flows.nodered.org/node/node-red-contrib-bcrypt) Needed to generate password hash
 
 ### Example flows snapshot
